@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda de Camisetas de Futbol</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #007bff;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #0056b3;
+                padding: 10px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            .container {
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> TIENDA DE CAMISAS DE FUTBOL</h1>
+        </header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="container">    
+            <div id="inicio" style="
+    position: relative;
+    background-image: url('https://mipasionhn.com/wp-content/uploads/2024/07/RealMadridNaranja_MiPasionhn.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+">
+
+    <div style="
+        background: rgba(0, 0, 0, 0.6);
+        padding: 40px;
+        border-radius: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+        color: #fff;
+    ">
+        <h2 style="font-size: 3em; margin-bottom: 20px; text-align: center;">
+            Bienvenido a la tienda de fútbol
+        </h2>
+        <h3 style="font-size: 1.8em; margin-bottom: 20px; text-align: center;">
+            Camisetas de tus equipos favoritos
+        </h3>
+        <p style="font-size: 1.2em; line-height: 1.6; text-align: justify;">
+            Explora nuestra exclusiva colección de camisetas de fútbol, que incluye tanto las últimas ediciones como las clásicas que han marcado historia. Disfruta de un proceso de compra rápido y seguro, con envío garantizado a tu puerta.
+        </p>
+        <p style="font-size: 1.2em; line-height: 1.6; text-align: justify;">
+            Únete a nuestra comunidad de amantes del fútbol y vístete con la pasión que te caracteriza. ¡No esperes más para encontrar tu camiseta ideal!
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="#productos" style="
+                display: inline-block;
+                background-color: #ff4500;
+                color: #fff;
+                padding: 15px 30px;
+                text-decoration: none;
+                font-size: 1.2em;
+                border-radius: 30px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            ">
+                Ver productos
+            </a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+    </html>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Tienda de Camisetas</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8eced;
+            text-align: center;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .producto {
+            background: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .producto:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .producto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .boton {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #carrito {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+            text-align: left;
+        }
+        #carrito h3 {
+            margin: 0 0 10px;
+        }
+        #lista-carrito {
+            list-style: none;
+            padding: 0;
+        }
+        .carrito-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+        .eliminar {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Catalogo de jerseys </header>
+    
+    <div id="carrito">
+        <h3>🛒 Carrito de Compras</h3>
+        <ul id="lista-carrito"></ul>
+        <p><strong>Total: $<span id="total">0.00</span></strong></p>
+    </div>
+    <h1>La Magia Comienza</h1>
+    <h2 id="productos">Nuestros Productos</h2>
+    <div class="container">
+        <div class="producto">
+            <img src="https://resources.sears.com.mx/medios-plazavip/fotos/productos_sears1/original/3888297.jpg?scale=500&qlty=75" alt="Camiseta 1">
+            <h3>Jersey Manchester United</h3>
+            <p>$50.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Manchester United', 50.00)">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://www.innovasport.com/medias/IS-FN8794-101-1.jpg?context=bWFzdGVyfGltYWdlc3w4MzM0NnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMk9DOW9ZMlF2TVRJM05EZzNOamcwTnpjeU1UUXVhbkJufDIwMTVkN2QzMmVkMDIxMTU5MjA2N2VjNzhmODkxMTllNmEzMmY4ZjY1NmM3NGMyNTk3Y2MzMjg4ZTY5MzkyM2Y" alt="Camiseta 2">
+            <h3>Jersey Tottenham</h3>
+            <p>$55.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Tottenham', 55.00)">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="https://www.camisetasstore.com/webp/2025/CAMISETA-DE-FUTBOL-Barcelona-2024-2025---SEGUNDA-550.webp" alt="Camiseta 3">
+            <h3>Jersey Barcelona</h3>
+            <p>$60.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Barcelona', 60.00)">Comprar</button>
+        </div>
+
+         <div class="producto">
+            <img src="https://acortar.link/xk1sLB"alt="Camiseta 4">
+            <h3>Jersey Real Madrid</h3>
+            <p>$58.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Real Madrid',58.00)
+         ">Comprar</button>
+         </div>
+
+         <div class="producto">
+            <img src="https://www.tudnfanshop.com/cdn/shop/files/9tz5DP1R_WBK_10f06d47-9060-4db6-ba9f-136893eca3c7.png?v=1726762956" alt="Camiseta 5">
+            <h3>Jersey Juventus</h3>
+            <p>$57.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Juventus', 57.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://www.tudnfanshop.com/cdn/shop/files/2KTsj6Q8_MNY_f107bf30-0207-496f-a62c-9d65e6dd30b9.png?v=1726764400" alt="Camiseta 6">
+            <h3>Jersey PSG</h3>
+            <p>$65.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey PSG', 65.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyZkW--yq9GiDczg4siGINL3gKipZjgkbjIw&s" alt="Camiseta 7">
+            <h3>Jersey Bayern Múnich</h3>
+            <p>$59.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Bayern Múnich', 59.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://images.footballfanatics.com/chelsea/chelsea-nike-home-stadium-shirt-2024-25_ss5_p-200851164+pv-1+u-canixtzkdetrqr6ldmyh+v-eq0p93tizr7qwtonxyrc.jpg?_hv=2&w=900" alt="Camiseta 8">
+            <h3>Jersey Chelsea</h3>
+            <p>$56.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Chelsea', 56.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://martimx.vtexassets.com/arquivos/ids/1259925/1127964212-1.png?v=638502668616170000" alt="Camiseta 9">
+            <h3>Jersey Liverpool</h3>
+            <p>$54.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Liverpool', 54.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://acortar.link/Ka3R2m" alt="Camiseta 10">
+            <h3>Jersey AC Milan</h3>
+            <p>$55.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey AC Milan', 55.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://retroknits.com.mx/wp-content/uploads/2024/11/sUxHEtGW7jnEHVq.jpg" alt="Camiseta 11">
+            <h3>Jersey Inter de Milán</h3>
+            <p>$57.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Inter de Milán', 57.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://resources.claroshop.com/medios-plazavip/mkt/623195662dcad_bjpg.jpg" alt="Camiseta 12">
+            <h3>Jersey Borussia Dortmund</h3>
+            <p>$53.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Borussia Dortmund', 53.00)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="https://www.innovasport.com/medias/jersey-adidas-arsenal-local-2425-is-IT6141-3.jpg?context=bWFzdGVyfGltYWdlc3w4NDgwNnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnd01TOW9PV1F2TVRJMk9UYzVNamMxT0RFM01qWXVhbkJufGJjMTU3ZTE5ODI0Yzc4NzdjNDY2ZTAyNTI1YTcxZmY1MDQ3NGJhNGY3NmUxNTFkODFjNGUxMGRhNzNmMzA3YmY" alt="Camiseta 13">
+            <h3>Jersey Arsenal</h3>
+            <p>$52.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Arsenal', 52.00)">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="https://resources.claroshop.com/medios-plazavip/t1/1725125169MaillotAtleticoMadridDomicile20242025jpg" alt="Camiseta 14">
+            <h3>Jersey Atlético de Madrid</h3>
+            <p>$54.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Atlético de Madrid', 54.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://jerseyco.mx/cdn/shop/files/AmericaTercero2425.png?v=1727349855" alt="Camiseta 15">
+            <h3>Jersey América</h3>
+            <p>$50.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey América', 50.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://sportpalace.com.mx/cdn/shop/files/254166.6.jpg?v=1719935597" alt="Camiseta 16">
+            <h3>Jersey Chivas</h3>
+            <p>$49.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Chivas', 49.00)">Comprar</button>
+        </div>
+        
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpgwehA7ABI9mzwJ7BaC25m9HQAVMjwKvebw&s" alt="Camiseta 17">
+            <h3>Jersey Pumas</h3>
+            <p>$48.00</p>
+            <button class="boton" onclick="agregarAlCarrito('Jersey Pumas', 48.00)">Comprar</button>
+        </div>
+        
+    </div>
+
+    <script>
+        let carrito = [];
+        let total = 0;
+
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({ nombre, precio });
+            total += precio;
+            actualizarCarrito();
+        }
+
+        function eliminarDelCarrito(index) {
+            total -= carrito[index].precio;
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            listaCarrito.innerHTML = "";
+            carrito.forEach((item, index) => {
+                const li = document.createElement("li");
+                li.classList.add("carrito-item");
+                li.innerHTML = `${item.nombre} - $${item.precio.toFixed(2)} 
+                    <button class="eliminar" onclick="eliminarDelCarrito(${index})">X</button>`;
+                listaCarrito.appendChild(li);
+            });
+            document.getElementById("total").innerText = total.toFixed(2);
+        }
+    </script>
+</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la Marca de Jerseys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .img-wrapper {
+            flex: 1;
+            max-width: 50%;
+            padding-right: 20px;
+        }
+        .img-wrapper img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .text {
+            flex: 1;
+            text-align: left;
+            color: #333;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .section-message {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .section-message p {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #555;
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="section">
+            <div class="img-wrapper">
+                <img src="https://www.camisetafutboles.com/includes/templates/masmodas/templates/camisetafutboles-camisetasfutbolbaratas.jpg" alt="Historia de la marca de jerseys">
+            </div>
+            <div class="text">
+                <h2>Historia de la Marca de Jerseys</h2>
+                <p>
+                    Fundada recientemente hace 7 dias, nuestra marca de jerseys ha liderado el mercado con un compromiso 
+                    de calidad, innovación y confort. Cada jersey cuenta una historia de esfuerzo, perseverancia y, 
+                    sobre todo, amor por el fútbol.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="img-wrapper">
+                <img src="https://media.gq.com.mx/photos/67ddc88dbf24f3cad36f17ce/4:3/w_2828,h_2121,c_limit/Cuando_Juega_Me%CC%81xico_2205469854.jpg" alt="Jersey futbolista">
+            </div>
+            <div class="text">
+                <h2>El Significado del Jersey</h2>
+                <p>
+                    Para un verdadero amante del fútbol, un jersey es mucho más que una prenda; 
+                    es la representación del amor por el deporte. Un jersey es un símbolo de identidad, 
+                    de pertenencia y de orgullo.
+                </p>
+            </div>
+        </div>
+
+        <div class="section-message">
+            <p>
+                "Un jersey no es solo una prenda de vestir, es un pedazo de historia que cada jugador lleva consigo, 
+                un reflejo de su dedicación y amor por el fútbol. Cada camiseta guarda momentos, recuerdos y una pasión 
+                que va más allá de la cancha. ¡Es el alma del fútbol!"
+            </p>
+        </div>
+
+    </div>
+    <div class="photo-gallery">
+        <img src="https://pbs.twimg.com/media/GK0X5ZRWsAAcYNy.jpg:large" alt="Isagi">
+        <img src="https://preview.redd.it/analysis-of-neo-egoist-league-teams-v0-xm7aq0mstupa1.png?width=2048&format=png&auto=webp&s=a1e41dff3d0bc738655dd1ea58af47aa7f694916" alt="Rin itoshi">
+        <img src="https://img.wattpad.com/b6b9f291c3e8b7fb67c438fb2ca02419bf988d4b/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5873677235785674753642376c413d3d2d313334323432353433342e313735653233633232313466356165353434363438343834363738392e6a7067" alt="Itoshi sae">
+        <img src="https://preview.redd.it/analysis-of-neo-egoist-league-teams-v0-lfnocl4evtpa1.png?width=2230&format=png&auto=webp&s=ac6900636ca3e47ddd4106ee32268924e018e913" alt="Bachira">
+        <img src="https://preview.redd.it/kaisers-evolution-moving-forward-v0-ude9e6hxfg2d1.jpg?width=640&crop=smart&auto=webp&s=0ddd9ada5abb5d02a51a867a5829182e7c5cd322" alt="El emperador">
+    </div>
+    
+    <style>
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .photo-gallery img {
+            width: 18%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+    
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+    
+        @media (max-width: 768px) {
+            .photo-gallery img {
+                width: 45%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .photo-gallery img {
+                width: 90%;
+            }
+        }
+    </style>
+    
+    <div class="contacto">
+        <h2 id="contacto">CONTACTANOS</h2>
+        <p>¿Tienes dudas o quieres saber más sobre nuestros productos? Escríbenos en nuestras redes sociales o envíanos un correo.</p>
+    
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png" alt="Facebook">
+                <a href="https://www.facebook.com/share/1LBW7eRctC/" target="_blank">Síguenos en Facebook</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram">
+                <a href="https://www.instagram.com/xgbxd12?igsh=MW9ob2owdnF2OHo4bA==" target="_blank">Síguenos en Instagram</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/042/148/611/non_2x/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.png" alt="Twitter">
+                <a href="https://x.com/Evan54527Miguel?t=EMDDR0e5XwJKSVHMfvch3Q&s=09" target="_blank">Síguenos en Twitter</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png" alt="WhatsApp">
+                <a href="https://wa.me/525572781091" target="_blank">Chatea por WhatsApp</a>
+            </div>
+            <div class="contact-item">
+                <img src="https://1000marcas.net/wp-content/uploads/2019/11/logo-Gmail-1.png" alt="Correo">
+                <a href="mailto:josearmandojoseflorencio8@gmail.com">Escríbenos un correo</a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .contact-section {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 40px auto;
+        }
+    
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+    
+        .contact-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+    
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+    
+        .contact-item img {
+            width: 30px;
+            height: 30px;
+        }
+    
+        .contact-item a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+    
+        .contact-item:hover {
+            transform: scale(1.05);
+            background-color: #444;
+        }
+    
+        .contact-item a:hover {
+            color: #ff4500;
+        }
+    
+        @media (max-width: 600px) {
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    </style>
+    
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
